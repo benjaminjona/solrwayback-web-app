@@ -9,7 +9,7 @@ Free and open source.
 ## Requirements
 
 - Node.js 18+
-- A running SolrWayback instance (default `http://localhost:8080`)
+- A running SolrWayback backend instance running at `http://localhost:8080`, serving WARC files.
 
 ## Setup
 
