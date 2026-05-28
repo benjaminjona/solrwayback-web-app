@@ -1,0 +1,50 @@
+{
+  "name": "react-playback-poc",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^3.33.0",
+    "@emotion/react": "^11.14.0",
+    "@nivo/core": "^0.99.0",
+    "@nivo/treemap": "^0.99.0",
+    "@react-sigma/core": "^5.0.6",
+    "@sigma/node-border": "^3.0.0",
+    "@sigma/node-image": "^3.0.0",
+    "@sigma/node-square": "^3.0.0",
+    "@tanstack/react-query": "^5.90.21",
+    "cytoscape": "^3.33.1",
+    "graphology": "^0.26.0",
+    "graphology-layout-forceatlas2": "^0.10.1",
+    "next-themes": "^0.4.6",
+    "react": "^18.3.1",
+    "react-cytoscapejs": "^2.0.0",
+    "react-dom": "^18.3.1",
+    "react-force-graph-2d": "^1.29.1",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.13.1",
+    "react-sigma": "^1.2.35",
+    "sigma": "^3.0.2",
+    "zustand": "^5.0.11"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.2",
+    "@types/react": "^18.3.3",
+    "@types/react-cytoscapejs": "^1.2.6",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  }
+}

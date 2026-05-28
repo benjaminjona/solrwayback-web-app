@@ -1,0 +1,38 @@
+import {SolrDoc} from "@/types.ts";
+
+type SearchResultProps = {
+  doc: SolrDoc
+  onClick: (doc: SolrDoc) => void
+
+}
+const SearchResult = ({doc,onClick}:SearchResultProps) => {
+  const date = doc.crawl_date || doc.wayback_date;
+  const newDate = new Date(date);
+  return (
+      <li
+        style={{
+          marginBottom: "10px",
+          padding: "10px",
+          border: "1px solid #eee",
+          cursor: "pointer",
+          backgroundColor: "#fff",
+        }}
+        onClick={() => onClick(doc)}
+      >
+        <div
+          style={{
+            fontWeight: "bold",
+            fontSize: "14px",
+            wordBreak: "break-all",
+          }}
+        >
+          {doc.url}
+        </div>
+        <div style={{ fontSize: "16px", color: "#666" }}>
+          {newDate.toLocaleString() }
+        </div>
+      </li>
+  );
+};
+
+export default SearchResult;
